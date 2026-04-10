@@ -1,0 +1,45 @@
+@use "variables";
+@use "functions";
+@use "adaptive";
+
+@mixin resize-laptop($property, $template) {
+	@include adaptive.laptop {
+		.landscape-laptop &{
+			#{$property}: functions.to-vh-desktop($template);
+		}
+
+		.portrait-laptop &{
+			#{$property}: functions.to-vw-desktop($template);
+		}
+	}
+}
+
+@mixin resize-tablet($property, $template) {
+	@include adaptive.tablet {
+		.landscape-tablet &{
+			#{$property}: functions.to-vh-laptop($template);
+		}
+
+		.portrait-tablet &{
+			#{$property}: functions.to-vw-laptop($template);
+		}
+	}
+}
+
+@mixin resize-mobile($property, $template) {
+	@include adaptive.mobile {
+		.landscape-mobile &{
+			#{$property}: functions.to-vh-mobile($template);
+		}
+
+		.portrait-mobile &{
+			#{$property}: functions.to-vw-mobile($template);
+		}
+	}
+}
+
+@mixin resize($property, $laptop, $tablet, $mobile) {
+	@include resize-laptop($property, $laptop);
+	@include resize-tablet($property, $tablet);
+	@include resize-mobile($property, $mobile);
+}
