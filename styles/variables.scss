@@ -1,9 +1,15 @@
 
+// Fonts
+$font-jaro: var(--font-jaro), sans-serif;
+$font-geist: var(--font-geist), sans-serif;
+$font-staatliches: var(--font-staatliches), sans-serif;
 
-
-
-
-
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-primary: #0F0F0F;
+$color-accent: #CD9D65;
+$color-accent-dark: #613B0F;
 
 // Adaptive constants
 $not-laptop: 1279px;

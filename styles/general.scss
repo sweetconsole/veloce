@@ -10,8 +10,8 @@ body {
 
 h1 {
 	@include mixins.resize("font-size", 60, 50, 40);
-
 	@debug "Legend";
 
+	font-family: variables.$font-jaro;
 	color: black;
 }
