@@ -1,0 +1,11 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+.paragraph {
+	@include mixins.resize("font-size", 20, 20, 20);
+
+	font-family: variables.$font-staatliches;
+	line-height: 135%;
+	color: variables.$color-black;
+	letter-spacing: 0.01em;
+}

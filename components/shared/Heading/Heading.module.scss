@@ -1,0 +1,29 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+@mixin heading {
+	font-family: variables.$font-staatliches;
+	color: variables.$color-white;
+	letter-spacing: 0.01em;
+}
+
+.heading_1 {
+	@include heading;
+	@include mixins.resize("font-size", 60, 50, 40);
+
+	line-height: 110%;
+}
+
+.heading_2 {
+	@include heading;
+	@include mixins.resize("font-size", 42, 38, 32);
+
+	line-height: 110%;
+}
+
+.heading_3 {
+	@include heading;
+	@include mixins.resize("font-size", 30, 24, 22);
+
+	line-height: 130%;
+}

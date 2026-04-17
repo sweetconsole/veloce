@@ -1,0 +1,12 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+.title {
+	@include mixins.resize("font-size", 150, 130, 100);
+
+	font-family: variables.$font-staatliches;
+	font-weight: 400;
+	line-height: 80%;
+	color: variables.$color-white;
+	letter-spacing: 0.01em;
+}
