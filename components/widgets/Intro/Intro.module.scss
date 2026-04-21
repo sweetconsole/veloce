@@ -1,0 +1,31 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.intro {
+	@include mixins.resize("height", 541, 540, 543);
+
+	position: relative;
+	width: 100%;
+	background-image: url("/images/intro_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.block {
+	@include mixins.resize("width", 541, 450, 0);
+	@include mixins.resize("height", 541, 295, 0);
+	@include mixins.resize("padding", 30, 30, 30);
+	@include mixins.resize("gap", 60, 60, 60);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: variables.$color-accent;
+
+	@include adaptive.mobile {
+		width: 100%;
+		height: auto;
+	}
+}

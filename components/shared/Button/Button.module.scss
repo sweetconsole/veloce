@@ -1,0 +1,73 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+@mixin button {
+	@include mixins.resize("padding-left", 26, 26, 26);
+	@include mixins.resize("padding-right", 26, 26, 26);
+	@include mixins.resize("padding-top", 8, 8, 8);
+	@include mixins.resize("padding-bottom", 8, 8, 8);
+
+	cursor: pointer;
+	border: 2px solid variables.$color-primary;
+	border-radius: 100%;
+	transition: variables.$transition-default;
+
+	p {
+		transition: variables.$transition-default;
+	}
+
+
+}
+
+.button_light {
+	@include button;
+
+	background-color: transparent;
+
+	p {
+		color: variables.$color-primary;
+	}
+
+	&:hover {
+		background-color: variables.$color-primary;
+
+		p {
+			color: variables.$color-accent;
+		}
+	}
+
+	&:active {
+		background-color: variables.$color-white;
+
+		p {
+			color: variables.$color-primary;
+		}
+	}
+}
+
+.button_dark {
+	@include button;
+
+	background-color: variables.$color-primary;
+
+	p {
+		color: variables.$color-accent;
+	}
+
+	&:hover {
+		background-color: transparent;
+
+		p {
+			color: variables.$color-primary;
+		}
+	}
+
+	&:active {
+		background-color: variables.$color-white;
+
+		p {
+			color: variables.$color-primary;
+		}
+	}
+}
+

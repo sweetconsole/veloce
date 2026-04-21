@@ -4,11 +4,11 @@
 
 @mixin resize-laptop($property, $template) {
 	@include adaptive.laptop {
-		.landscape-laptop &{
+		@media (orientation: landscape) {
 			#{$property}: functions.to-vh-desktop($template);
 		}
 
-		.portrait-laptop &{
+		@media (orientation: portrait) {
 			#{$property}: functions.to-vw-desktop($template);
 		}
 	}
@@ -16,11 +16,11 @@
 
 @mixin resize-tablet($property, $template) {
 	@include adaptive.tablet {
-		.landscape-tablet &{
+		@media (orientation: landscape) {
 			#{$property}: functions.to-vh-laptop($template);
 		}
 
-		.portrait-tablet &{
+		@media (orientation: portrait) {
 			#{$property}: functions.to-vw-laptop($template);
 		}
 	}
@@ -28,12 +28,12 @@
 
 @mixin resize-mobile($property, $template) {
 	@include adaptive.mobile {
-		.landscape-mobile &{
-			#{$property}: functions.to-vh-mobile($template);
+		@media (orientation: landscape) {
+			#{$property}: functions.to-vw-mobile($template);
 		}
 
-		.portrait-mobile &{
-			#{$property}: functions.to-vw-mobile($template);
+		@media (orientation: portrait) {
+			#{$property}: functions.to-vh-mobile($template);
 		}
 	}
 }

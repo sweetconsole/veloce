@@ -10,10 +10,11 @@ $color-black: #000000;
 $color-primary: #0F0F0F;
 $color-accent: #CD9D65;
 $color-accent-dark: #613B0F;
+$transition-default: all .2s ease-in-out;
 
 // Adaptive constants
-$not-laptop: 1279px;
-$not-mobile: 799px;
+$not-tablet: 1279px; // 1024
+$not-mobile: 799px; // 672
 
 // Template constants
 $width-template-laptop: 1280;

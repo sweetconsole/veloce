@@ -1,17 +1,8 @@
 @use "variables";
 @use "mixins";
-@import "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap";
 
 body {
 	font-family: "Times New Roman", serif;
 	font-size: 24px;
 	color: red;
-}
-
-h1 {
-	@include mixins.resize("font-size", 60, 50, 40);
-	@debug "Legend";
-
-	font-family: variables.$font-jaro;
-	color: black;
 }

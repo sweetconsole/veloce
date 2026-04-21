@@ -1,4 +1,4 @@
-@use "variables.scss";
+@use "variables";
 
 @function to-vw-desktop($value) {
 	@return 100vw * calc($value / variables.$width-template-laptop);

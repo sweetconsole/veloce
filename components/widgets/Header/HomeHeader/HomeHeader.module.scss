@@ -1,0 +1,84 @@
+@use "../../../../styles/variables";
+@use "../../../../styles/mixins";
+@use "../../../../styles/adaptive";
+
+.header {
+	@include mixins.resize("padding-top", 25, 30, 15);
+
+}
+
+.container {
+	@include mixins.resize("padding-bottom", 30, 30, 20);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: flex-end;
+
+	@include adaptive.tablet {
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+
+	@include adaptive.mobile {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.logo {
+	@include mixins.resize("width", 575, 740, 107);
+	@include mixins.resize("height", 193, 248, 35);
+
+	@include adaptive.tablet {
+		order: 2;
+		margin: 0 auto;
+	}
+
+	@include adaptive.mobile {
+		order: 0;
+		margin: 0;
+	}
+}
+
+.block {
+	@include mixins.resize("gap", 63, 50, 50);
+
+	display: flex;
+	flex-direction: column;
+}
+
+.subtitle {
+	@include adaptive.tablet {
+		text-align: center;
+	}
+
+	@include adaptive.mobile {
+		display: none;
+	}
+}
+
+.navigation {
+	@include mixins.resize("padding-top", 8, 8, 0);
+	@include mixins.resize("padding-bottom", 8, 8, 0);
+
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid variables.$color-black;
+
+	@include adaptive.mobile {
+		@include mixins.resize("gap", 10, 10, 10);
+
+		flex-direction: column;
+		align-items: flex-end;
+		border-top: none;
+	}
+}
+
+.link p {
+	transition: variables.$transition-default;
+
+	&:hover {
+		color: variables.$color-accent-dark;
+	}
+}

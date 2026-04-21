@@ -1,0 +1,43 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+
+.chessboard {
+	position: relative;
+	width: 100%;
+	height: 32px;
+	
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 16px;
+		content: '';
+		background-image:
+			repeating-linear-gradient(
+				90deg,
+				variables.$color-black 0,
+				variables.$color-black 16px,
+				transparent 16px,
+				transparent 32px
+			);
+	}
+
+	&::after {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 16px;
+		content: '';
+		background-image:
+			repeating-linear-gradient(
+				90deg,
+				transparent 0,
+				transparent 16px,
+				variables.$color-black 16px,
+				variables.$color-black 32px
+			);
+	}
+}

@@ -1,0 +1,16 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.wrapper {
+	@include mixins.resize("padding", 20, 16, 8);
+	@include mixins.resize("max-width", 920, 720, 350);
+	@include mixins.resize("gap", 50, 40, 30);
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.text {
+	color: variables.$color-black;
+}
