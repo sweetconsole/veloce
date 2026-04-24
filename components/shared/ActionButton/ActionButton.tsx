@@ -7,10 +7,11 @@ import styles from "./ActionButton.module.scss"
 type ButtonProps = {
 	as?: "button" | "link"
 	variant?: "light" | "dark"
+	className?: string
 	href?: string
 	onClick?: () => void
-} & Omit<ComponentPropsWithoutRef<"button">, "onClick"> &
-	Omit<ComponentPropsWithoutRef<typeof Link>, "href">
+} & Omit<ComponentPropsWithoutRef<"button">, "onClick" | "className"> &
+	Omit<ComponentPropsWithoutRef<typeof Link>, "href" | "className">
 
 const variants = {
 	light: styles.button_light,
@@ -22,12 +23,13 @@ const ActionButton: FC<ButtonProps> = ({
 	variant = "light",
 	href = "",
 	onClick,
+	className,
 	...props
 }) => {
 	if (as == "link") {
 		return (
 			<Link
-				className={clsx(variants[variant], props.className)}
+				className={clsx(variants[variant], className)}
 				href={href}
 				onClick={onClick}
 				{...props}
@@ -38,7 +40,7 @@ const ActionButton: FC<ButtonProps> = ({
 	}
 
 	return (
-		<button className={clsx(variants[variant], props.className)}>
+		<button className={clsx(variants[variant], className)}>
 			<Label>{props.children}</Label>
 		</button>
 	)

@@ -4,8 +4,12 @@ import styles from "./Heading.module.scss"
 
 type HeadingElement = "h1" | "h2" | "h3" | "h4"
 
-interface HeadingProps extends ComponentPropsWithoutRef<HeadingElement> {
+interface HeadingProps extends Omit<
+	ComponentPropsWithoutRef<HeadingElement>,
+	"className"
+> {
 	level?: 1 | 2 | 3
+	className?: string
 }
 
 const classes = {
@@ -14,11 +18,11 @@ const classes = {
 	3: styles.heading_3
 }
 
-const Heading: FC<HeadingProps> = ({ level = 2, ...props }) => {
+const Heading: FC<HeadingProps> = ({ level = 2, className, ...props }) => {
 	const Tag = `h${level + 1}` as HeadingElement
 
 	return (
-		<Tag className={clsx(classes[level], props.className)} {...props}>
+		<Tag className={clsx(classes[level], className)} {...props}>
 			{props.children}
 		</Tag>
 	)
