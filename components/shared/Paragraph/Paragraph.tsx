@@ -1,17 +1,11 @@
-import { CSSProperties, type FC, ReactNode } from "react"
-import styles from "./Paragraph.module.scss"
 import clsx from "clsx"
+import { ComponentPropsWithoutRef, type FC } from "react"
+import styles from "./Paragraph.module.scss"
 
-interface ParagraphProps {
-	children: ReactNode | ReactNode[]
-	className?: string
-	style?: CSSProperties
-}
-
-const Paragraph: FC<ParagraphProps> = ({ children, className, style }) => {
+const Paragraph: FC<ComponentPropsWithoutRef<"p">> = ({ ...props }) => {
 	return (
-		<p className={clsx(styles.paragraph, className)} style={style}>
-			{children}
+		<p className={clsx(styles.paragraph, props.className)} {...props}>
+			{props.children}
 		</p>
 	)
 }

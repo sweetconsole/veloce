@@ -1,12 +1,11 @@
-import { CSSProperties, type FC, ReactNode, JSX } from "react"
-import styles from "./Heading.module.scss"
 import clsx from "clsx"
+import { type FC, ComponentPropsWithoutRef } from "react"
+import styles from "./Heading.module.scss"
 
-interface HeadingProps {
-	children: ReactNode | ReactNode[]
+type HeadingElement = "h1" | "h2" | "h3" | "h4"
+
+interface HeadingProps extends ComponentPropsWithoutRef<HeadingElement> {
 	level?: 1 | 2 | 3
-	className?: string
-	style?: CSSProperties
 }
 
 const classes = {
@@ -15,17 +14,12 @@ const classes = {
 	3: styles.heading_3
 }
 
-const Heading: FC<HeadingProps> = ({
-	children,
-	level = 2,
-	className,
-	style
-}) => {
-	const Tag = `h${level + 1}` as keyof JSX.IntrinsicElements
+const Heading: FC<HeadingProps> = ({ level = 2, ...props }) => {
+	const Tag = `h${level + 1}` as HeadingElement
 
 	return (
-		<Tag className={clsx(classes[level], className)} style={style}>
-			{children}
+		<Tag className={clsx(classes[level], props.className)} {...props}>
+			{props.children}
 		</Tag>
 	)
 }

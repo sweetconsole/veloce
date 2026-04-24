@@ -1,8 +1,8 @@
 "use client"
-import { type FC } from "react"
 import { usePathname } from "next/navigation"
-import HomeHeader from "./HomeHeader/HomeHeader"
+import { type FC } from "react"
 import DefaultHeader from "./DefaultHeader/DefaultHeader"
+import HomeHeader from "./HomeHeader/HomeHeader"
 
 const Header: FC = () => {
 	const pathname = usePathname()

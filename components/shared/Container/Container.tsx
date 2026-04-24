@@ -1,17 +1,23 @@
-import { CSSProperties, type FC, ReactNode } from "react"
 import { clsx } from "clsx"
+import { ComponentPropsWithoutRef, type FC } from "react"
 import styles from "./Container.module.scss"
 
-interface ContainerProps {
-	children?: ReactNode | ReactNode[]
-	className?: string
-	style?: CSSProperties
+interface ContainerProps extends ComponentPropsWithoutRef<"div"> {
+	tag?: "div" | "section"
 }
 
-const Container: FC<ContainerProps> = ({ children, className, style }) => {
+const Container: FC<ContainerProps> = ({ tag = "div", ...props }) => {
+	if (tag === "section") {
+		return (
+			<section className={clsx(styles.container, props.className)} {...props}>
+				{props.children}
+			</section>
+		)
+	}
+
 	return (
-		<div className={clsx(styles.container, className)} style={style}>
-			{children}
+		<div className={clsx(styles.container, props.className)} {...props}>
+			{props.children}
 		</div>
 	)
 }

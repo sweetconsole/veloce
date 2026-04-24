@@ -1,17 +1,11 @@
-import { CSSProperties, type FC } from "react"
-import styles from "./PageTitle.module.scss"
 import clsx from "clsx"
+import { ComponentPropsWithoutRef, type FC } from "react"
+import styles from "./PageTitle.module.scss"
 
-interface PageTitleProps {
-	title: string
-	className?: string
-	style?: CSSProperties
-}
-
-const PageTitle: FC<PageTitleProps> = ({ title, className, style }) => {
+const PageTitle: FC<ComponentPropsWithoutRef<"h1">> = ({ ...props }) => {
 	return (
-		<h1 className={clsx(styles.title, className)} style={style}>
-			{title}
+		<h1 className={clsx(styles.title, props.className)} {...props}>
+			{props.children}
 		</h1>
 	)
 }

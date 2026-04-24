@@ -1,0 +1,49 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	@include mixins.resize("min-height", 800, 800, 740);
+	@include mixins.resize("padding-bottom", 80, 80, 80);
+
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url("/images/new_product_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.info {
+	@include mixins.resize("max-width", 584, 506, 287);
+	@include mixins.resize("gap", 8, 8, 8);
+
+	display: flex;
+	flex-direction: column;
+}
+
+.tag {
+	@include mixins.resize("width", 115, 115, 115);
+	@include mixins.resize("height", 44, 44, 44);
+
+	@include adaptive.mobile {
+		@include mixins.resize("top", 80, 80, 80);
+
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.title {
+	@include mixins.resize("font-size", 150, 130, 70);
+}
+
+.subtitle {
+	color: variables.$color-white;
+	text-align: center;
+}

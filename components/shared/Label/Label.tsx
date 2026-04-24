@@ -1,17 +1,11 @@
-import { CSSProperties, type FC, ReactNode } from "react"
 import clsx from "clsx"
+import { ComponentPropsWithoutRef, type FC } from "react"
 import styles from "./Label.module.scss"
 
-interface LabelProps {
-	children: ReactNode | ReactNode[]
-	className?: string
-	style?: CSSProperties
-}
-
-const Label: FC<LabelProps> = ({ children, className, style }) => {
+const Label: FC<ComponentPropsWithoutRef<"p">> = ({ ...props }) => {
 	return (
-		<p className={clsx(styles.label, className)} style={style}>
-			{children}
+		<p className={clsx(styles.label, props.className)} {...props}>
+			{props.children}
 		</p>
 	)
 }

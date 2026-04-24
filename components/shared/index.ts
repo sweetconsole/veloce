@@ -1,4 +1,4 @@
-export { default as Button } from "./Button/Button"
+export { default as ActionButton } from "@/components/shared/ActionButton/ActionButton"
 export { default as Caption } from "./Caption/Caption"
 export { default as ChessboardPattern } from "./ChessboardPattern/ChessboardPattern"
 export { default as Container } from "./Container/Container"
