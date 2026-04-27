@@ -1,0 +1,46 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	@include mixins.resize("padding-top", 30, 30, 10);
+	@include mixins.resize("padding-bottom", 30, 30, 10);
+}
+
+.products {
+	@include mixins.resize("column-gap", 20, 20, 20);
+	@include mixins.resize("row-gap", 70, 70, 70);
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product {
+	@include mixins.resize("max-width", 600, 600, 355);
+	@include mixins.resize("gap", 30, 30, 30);
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.title {
+	@include mixins.resize("top", 30, 30, 30);
+	@include mixins.resize("left", 30, 30, 30);
+
+	position: absolute;
+	color: variables.$color-white;
+}
+
+.image {
+	@include mixins.resize("height", 600, 600, 355);
+
+	width: 100%;
+	object-fit: cover;
+}
+
+.description {
+
+}

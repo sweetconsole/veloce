@@ -11,9 +11,9 @@ interface HeadingProps extends Omit<
 
 const PageTitle: FC<HeadingProps> = ({ className, ...props }) => {
 	return (
-		<h1 className={clsx(styles.title, className)} {...props}>
+		<h2 className={clsx(styles.title, className)} {...props}>
 			{props.children}
-		</h1>
+		</h2>
 	)
 }
 

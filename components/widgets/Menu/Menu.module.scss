@@ -1,0 +1,31 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	@include mixins.resize("padding-top", 30, 30, 30);
+	@include mixins.resize("padding-bottom", 30, 30, 30);
+
+	background-color: variables.$color-accent;
+}
+
+.menu {
+
+}
+
+.title {
+	color: variables.$color-accent-dark;
+}
+
+.link {
+	h2 {
+		color: variables.$color-black;
+		transition: variables.$transition-default;
+	}
+
+	&:hover {
+		h2 {
+			color: variables.$color-white;
+		}
+	}
+}
