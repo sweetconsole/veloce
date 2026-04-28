@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { type ReactNode } from "react"
+import { Footer, Header } from "@/components/widgets"
 import { geist, jaro, staatliches } from "./fonts"
-import { Header } from "@/components/widgets"
 import "@/styles/reset.scss"
 import "@/styles/general.scss"
 
@@ -19,6 +19,8 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 				<Header />
 
 				{children}
+
+				<Footer />
 			</body>
 		</html>
 	)

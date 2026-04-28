@@ -3,7 +3,9 @@ import {
 	Intro,
 	NewProduct,
 	Products,
-	Menu
+	Menu,
+	WhereToBuy,
+	Footer
 } from "@/components/widgets"
 
 export default function Home() {
@@ -14,6 +16,7 @@ export default function Home() {
 			<NewProduct />
 			<Products />
 			<Menu />
+			<WhereToBuy />
 		</main>
 	)
 }

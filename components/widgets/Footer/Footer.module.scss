@@ -1,0 +1,74 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.footer {
+	@include mixins.resize("padding-top", 30, 30, 50);
+
+	background-color: variables.$color-white;
+}
+
+.accent_footer {
+	background-color: variables.$color-accent;
+}
+
+.info {
+	@include mixins.resize("padding-bottom", 30, 30, 50);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	@include adaptive.tablet {
+		grid-template-columns: 1fr;
+	}
+}
+
+.info_section {
+	@include mixins.resize("gap", 7, 7, 7);
+	@include mixins.resize("padding-bottom", 120, 50, 50);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@include adaptive.tablet {
+		align-items: center;
+	}
+}
+
+.link {
+	p {
+		transition: variables.$transition-default;
+	}
+
+	&:hover p {
+		color: variables.$color-accent-dark;
+	}
+}
+
+.block {
+	@include mixins.resize("gap", 20, 20, 20);
+	@include mixins.resize("padding-bottom", 20, 20, 20);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@include adaptive.tablet {
+		align-items: center;
+	}
+}
+
+.logo {
+	@include mixins.resize("width", 575, 740, 300);
+	@include mixins.resize("height", 193, 248, 84);
+}
+
+.copyright {
+	@include mixins.resize("font-size", 14.22, 14.22, 14.22);
+
+	font-family: variables.$font-geist;
+	font-weight: 700;
+	line-height: 110%;
+	color: variables.$color-primary;
+}

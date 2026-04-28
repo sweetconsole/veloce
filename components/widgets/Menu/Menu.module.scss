@@ -10,17 +10,26 @@
 }
 
 .menu {
-
-}
-
-.title {
-	color: variables.$color-accent-dark;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .link {
 	h2 {
+		color: variables.$color-accent-dark;
+	}
+
+	&:hover {
+		h2 {
+			color: variables.$color-primary;
+		}
+	}
+}
+
+.accent_link {
+	h2 {
 		color: variables.$color-black;
-		transition: variables.$transition-default;
 	}
 
 	&:hover {
@@ -28,4 +37,10 @@
 			color: variables.$color-white;
 		}
 	}
+}
+
+.title {
+	@include mixins.resize("font-size", 150, 130, 70);
+
+	transition: variables.$transition-default;
 }

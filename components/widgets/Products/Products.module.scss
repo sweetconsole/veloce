@@ -44,3 +44,15 @@
 .description {
 
 }
+
+.link {
+	p {
+		transition: variables.$transition-default;
+	}
+
+	&:hover {
+		p {
+			color: variables.$color-accent-dark;
+		}
+	}
+}
