@@ -2,7 +2,11 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { MocktailIntro } from "@/components/mocktails"
 import { MocktailProvider } from "@/hooks/useMocktail"
-import { getMocktailBySlug } from "@/lib/mocktails.data"
+import { getAllMocktailSlugs, getMocktailBySlug } from "@/lib/mocktails.data"
+
+export async function generateStaticParams() {
+	return getAllMocktailSlugs()
+}
 
 export async function generateMetadata({
 	params
@@ -33,7 +37,7 @@ export default async function MocktailPage({
 	const mocktail = getMocktailBySlug(slug.toLowerCase())
 
 	if (!mocktail) {
-		return null
+		notFound()
 	}
 
 	console.log(mocktail)

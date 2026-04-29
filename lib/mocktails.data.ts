@@ -65,5 +65,11 @@ export const mocktails: Array<Mocktail> = [
 ]
 
 export function getMocktailBySlug(slug: string) {
-	return mocktails.find(c => c.slug === slug)
+	return mocktails.find(mocktail => mocktail.slug === slug)
+}
+
+export function getAllMocktailSlugs(): { slug: string }[] {
+	return mocktails.map(mocktail => ({
+		slug: mocktail.slug.toLowerCase()
+	}))
 }
