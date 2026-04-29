@@ -1,2 +1,54 @@
 @use "../../../../styles/variables";
 @use "../../../../styles/mixins";
+@use "../../../../styles/adaptive";
+
+.header {
+	@include mixins.resize("padding-top", 10, 10, 20);
+	@include mixins.resize("padding-bottom", 10, 10, 20);
+
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: variables.$color-white;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include adaptive.mobile {
+		align-items: flex-start;
+	}
+}
+
+.logo {
+	@include mixins.resize("font-size", 54.02, 54.02, 20);
+
+	font-family: variables.$font-jaro;
+	line-height: 84%;
+	color: variables.$color-primary;
+	text-transform: uppercase;
+	letter-spacing: -0.06em;
+}
+
+.navigation {
+	@include mixins.resize("gap", 26, 26, 10);
+
+	display: flex;
+	align-items: center;
+
+	@include adaptive.mobile {
+		flex-direction: column;
+	}
+}
+
+.link {
+	p {
+		transition: variables.$transition-default;
+	}
+
+	&:hover p {
+		color: variables.$color-accent-dark;
+	}
+}

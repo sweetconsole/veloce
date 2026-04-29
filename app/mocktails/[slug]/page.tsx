@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { MocktailIntro } from "@/components/mocktails"
+import { MocktailIngredients, MocktailIntro } from "@/components/mocktails"
 import { MocktailProvider } from "@/hooks/useMocktail"
 import { getAllMocktailSlugs, getMocktailBySlug } from "@/lib/mocktails.data"
 
@@ -40,11 +40,10 @@ export default async function MocktailPage({
 		notFound()
 	}
 
-	console.log(mocktail)
-
 	return (
 		<MocktailProvider mocktail={mocktail}>
 			<MocktailIntro />
+			<MocktailIngredients />
 		</MocktailProvider>
 	)
 }

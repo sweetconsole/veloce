@@ -13,10 +13,7 @@
 
 .info {
 	@include mixins.resize("min-height", 230, 230, 200);
-	@include mixins.resize("padding-top", 23, 23, 23);
-	@include mixins.resize("padding-bottom", 23, 23, 23);
-	@include mixins.resize("padding-left", 23, 23, 23);
-	@include mixins.resize("padding-right", 23, 23, 23);
+	@include mixins.resize("padding", 23, 23, 23);
 
 	max-height: 100vh;
 	aspect-ratio: 1 / 1;

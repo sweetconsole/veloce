@@ -42,7 +42,7 @@ export const mocktails: Array<Mocktail> = [
 			ingredients.grapefruit,
 			ingredients.lemon,
 			ingredients.mint,
-			ingredients.agava
+			ingredients.agave
 		]
 	},
 	{
@@ -56,7 +56,7 @@ export const mocktails: Array<Mocktail> = [
 			"A spicy, rich aperitif. Served in a coupe glass. It is decorated with a cinnamon stick, a thin strip of lime zest, and an star of star anise.",
 		image: "/images/mocktails/spezia.jpg",
 		ingredients: [
-			ingredients.cardamon,
+			ingredients.cardamom,
 			ingredients.ginger,
 			ingredients.cinnamon,
 			ingredients.lime

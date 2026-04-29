@@ -1,0 +1,68 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	@include mixins.resize("padding-top", 64, 64, 64);
+	@include mixins.resize("padding-bottom", 72, 72, 72);
+
+	background-color: variables.$color-accent;
+}
+
+.title {
+	@include mixins.resize("margin-bottom", 24, 32, 32);
+}
+
+.ingredients {
+	@include mixins.resize("gap", 32, 32, 32);
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	@include adaptive.mobile {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.ingredient {
+
+}
+
+.ingredient_image {
+	@include mixins.resize("margin-bottom", 8, 8, 8);
+
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+}
+
+.ingredient_title {
+	font-weight: 500;
+	text-align: center;
+}
+
+.line {
+	@include mixins.resize("margin-top", 48, 48, 32);
+	@include mixins.resize("margin-bottom", 48, 48, 32);
+
+	width: 100%;
+	height: 3px;
+	background-color: variables.$color-primary;
+
+	@include adaptive.tablet {
+		height: 2px;
+	}
+}
+
+.serve {
+	max-width: 70vw;
+	font-weight: 500;
+
+	@include adaptive.tablet {
+		max-width: 85vw;
+	}
+
+	@include adaptive.mobile {
+		max-width: 100vw;
+	}
+}
