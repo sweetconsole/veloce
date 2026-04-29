@@ -38,7 +38,7 @@ const Footer: FC = () => {
 			<Container className={styles.block}>
 				<Image
 					className={styles.logo}
-					src="big_black_logo.svg"
+					src="/big_black_logo.svg"
 					alt="Veloce"
 					width={575}
 					height={193}

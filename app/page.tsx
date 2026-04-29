@@ -4,8 +4,7 @@ import {
 	NewProduct,
 	Products,
 	Menu,
-	WhereToBuy,
-	Footer
+	WhereToBuy
 } from "@/components/widgets"
 
 export default function Home() {

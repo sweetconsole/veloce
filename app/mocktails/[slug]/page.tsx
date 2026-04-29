@@ -33,8 +33,10 @@ export default async function MocktailPage({
 	const mocktail = getMocktailBySlug(slug.toLowerCase())
 
 	if (!mocktail) {
-		notFound()
+		return null
 	}
+
+	console.log(mocktail)
 
 	return (
 		<MocktailProvider mocktail={mocktail}>
