@@ -6,9 +6,6 @@
 	@include mixins.resize("padding-top", 10, 10, 20);
 	@include mixins.resize("padding-bottom", 10, 10, 20);
 
-	position: sticky;
-	top: 0;
-	z-index: 10;
 	background-color: variables.$color-white;
 }
 

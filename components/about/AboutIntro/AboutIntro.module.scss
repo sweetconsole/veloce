@@ -1,0 +1,23 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	@include mixins.resize("padding-top", 50, 50, 50);
+	@include mixins.resize("padding-bottom", 100, 100, 100);
+
+	background-color: variables.$color-black;
+}
+
+.container {
+	@include mixins.resize("gap", 40, 40, 40);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	h1, h2, h3, h4, p {
+		color: variables.$color-white;
+	}
+}

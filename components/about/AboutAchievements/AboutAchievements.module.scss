@@ -1,0 +1,76 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	@include adaptive.tablet {
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+
+.info {
+	@include mixins.resize("min-height", 600, 640, 750);
+	@include mixins.resize("padding-top", 40, 40, 40);
+	@include mixins.resize("padding-bottom", 40, 40, 40);
+	@include mixins.resize("padding-left", 30, 30, 30);
+	@include mixins.resize("padding-right", 30, 30, 30);
+	@include mixins.resize("gap", 40, 40, 40);
+
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: variables.$color-accent;
+}
+
+.achievements {
+
+}
+
+.achievement {
+	@include mixins.resize("padding-top", 16, 16, 20);
+	@include mixins.resize("padding-bottom", 10, 16, 10);
+	@include mixins.resize("gap", 40, 30, 10);
+
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid variables.$color-black;
+}
+
+.block {
+	@include mixins.resize("padding", 16, 16, 16);
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-image: url("/images/founder.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.empty {
+	flex: 1;
+}
+
+.founder {
+	@include mixins.resize("bottom", 16, 16, 16);
+	@include mixins.resize("padding", 16, 16, 16);
+	@include mixins.resize("border-radius", 16, 16, 16);
+	@include mixins.resize("gap", 14, 14, 14);
+
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	margin-top: 40vh;
+	background-color: rgb(0 0 0 / 80%);
+
+	@include adaptive.tablet {
+		align-items: center;
+	}
+}

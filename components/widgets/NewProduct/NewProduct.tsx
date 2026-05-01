@@ -9,7 +9,7 @@ const NewProduct: FC = () => {
 			<div className={styles.info}>
 				<Image
 					className={styles.tag}
-					src="/images/tag_new.svg"
+					src="/images/tags/new.svg"
 					width={115}
 					height={44}
 					alt="New"

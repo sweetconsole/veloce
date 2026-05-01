@@ -2,7 +2,7 @@
 @use "../../../styles/mixins";
 
 .title {
-	@include mixins.resize("font-size", 150, 130, 100);
+	@include mixins.resize("font-size", 150, 130, 80);
 
 	font-family: variables.$font-staatliches;
 	font-weight: 400;

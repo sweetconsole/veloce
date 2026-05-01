@@ -14,13 +14,15 @@ const HomeHeader: FC = () => {
 	return (
 		<header className={styles.header}>
 			<Container className={styles.container}>
-				<Image
-					className={styles.logo}
-					src="big_black_logo.svg"
-					width={575}
-					height={193}
-					alt="Veloce"
-				/>
+				<Link href={ROUTES.HOME} aria-label="Go to home page">
+					<Image
+						className={styles.logo}
+						src="big_black_logo.svg"
+						width={575}
+						height={193}
+						alt="Veloce"
+					/>
+				</Link>
 
 				<div className={styles.block}>
 					<Heading className={styles.subtitle} level={3}>
@@ -28,11 +30,11 @@ const HomeHeader: FC = () => {
 					</Heading>
 
 					<nav className={styles.navigation}>
-						<Link className={styles.link} href={ROUTES.HOME}>
-							<Label>Home</Label>
-						</Link>
 						<Link className={styles.link} href={ROUTES.ABOUT}>
 							<Label>About</Label>
+						</Link>
+						<Link className={styles.link} href={ROUTES.MOCKTAILS}>
+							<Label>Mocktails</Label>
 						</Link>
 						<Link className={styles.link} href={ROUTES.CONTACT}>
 							<Label>Contact</Label>
