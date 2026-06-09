@@ -1,0 +1,49 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+@use "../../../styles/adaptive";
+
+.block {
+	@include mixins.resize("padding-top", 32, 32, 32);
+	@include mixins.resize("padding-left", 88, 88, 20);
+	@include mixins.resize("padding-right", 88, 88, 20);
+
+	max-width: 90%;
+	margin: 0 auto;
+	background: variables.$color-white;
+
+	@include adaptive.mobile {
+		max-width: 100%;
+	}
+}
+
+.title {
+	@include mixins.resize("margin-bottom", 50, 50, 50);
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contacts {
+	p {
+		text-transform: uppercase;
+	}
+}
+
+.contact {
+	@include mixins.resize("padding-top", 20, 20, 20);
+	@include mixins.resize("padding-bottom", 40, 40, 40);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-top: 1px solid variables.$color-black;
+}
+
+.link {
+	p {
+		transition: variables.$transition-default;
+	}
+
+	&:hover p {
+		color: variables.$color-accent-dark;
+	}
+}

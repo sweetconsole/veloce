@@ -1,7 +1,10 @@
+import Contacts from "@/components/contact/Contacts/Contacts"
+import styles from "./contact.module.scss"
+
 export default function ContactPage() {
 	return (
-		<div>
-			<h1>Contact</h1>
-		</div>
+		<main className={styles.block}>
+			<Contacts />
+		</main>
 	)
 }
