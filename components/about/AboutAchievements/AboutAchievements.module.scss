@@ -40,7 +40,7 @@
 	border-bottom: 1px solid variables.$color-black;
 }
 
-.block {
+.founder {
 	@include mixins.resize("padding", 16, 16, 16);
 
 	position: relative;
@@ -48,17 +48,17 @@
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	background-image: url("/images/founder.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 }
 
-.empty {
+.founder_image {
+	object-fit: cover;
+}
+
+.founder_empty {
 	flex: 1;
 }
 
-.founder {
+.founder_info {
 	@include mixins.resize("bottom", 16, 16, 16);
 	@include mixins.resize("padding", 16, 16, 16);
 	@include mixins.resize("border-radius", 16, 16, 16);

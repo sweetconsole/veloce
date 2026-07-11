@@ -18,25 +18,13 @@ const DefaultHeader: FC = () => {
 				</Link>
 
 				<nav className={styles.navigation}>
-					<Link
-						className={styles.link}
-						href={ROUTES.HOME}
-						aria-label="Go to home"
-					>
+					<Link className={styles.link} href={ROUTES.ABOUT}>
 						<Label>About</Label>
 					</Link>
-					<Link
-						className={styles.link}
-						href={ROUTES.HOME}
-						aria-label="Go to home"
-					>
+					<Link className={styles.link} href={ROUTES.MOCKTAILS}>
 						<Label>Mocktails</Label>
 					</Link>
-					<Link
-						className={styles.link}
-						href={ROUTES.HOME}
-						aria-label="Go to home"
-					>
+					<Link className={styles.link} href={ROUTES.CONTACT}>
 						<Label>Contact</Label>
 					</Link>
 				</nav>

@@ -6,6 +6,13 @@ import styles from "./NewProduct.module.scss"
 const NewProduct: FC = () => {
 	return (
 		<section className={styles.section}>
+			<Image
+				className={styles.image}
+				src="/images/new_product_background.jpg"
+				fill
+				alt=""
+			/>
+
 			<div className={styles.info}>
 				<Image
 					className={styles.tag}

@@ -25,9 +25,16 @@ const AboutAchievements: FC = () => {
 				</ul>
 			</div>
 
-			<div className={styles.block}>
-				<div className={styles.empty} />
-				<div className={styles.founder}>
+			<div className={styles.founder}>
+				<Image
+					className={styles.founder_image}
+					src="/images/founder.jpg"
+					alt=""
+					fill
+				/>
+
+				<div className={styles.founder_empty} />
+				<div className={styles.founder_info}>
 					<Image
 						className={styles.tag}
 						src="/images/tags/founder.svg"

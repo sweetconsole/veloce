@@ -32,6 +32,7 @@ const HomeHeader: FC = () => {
 					>
 						<Image
 							className={styles.logo_image}
+							priority
 							src="big_black_logo.svg"
 							width={575}
 							height={193}

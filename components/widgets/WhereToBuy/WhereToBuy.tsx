@@ -13,13 +13,14 @@ const WhereToBuy: FC = () => {
 				</Heading>
 			</div>
 
-			<Image
-				className={styles.image}
-				src="/images/where_to_buy.jpg"
-				alt={""}
-				width={1000}
-				height={1000}
-			/>
+			<div className={styles.image_container}>
+				<Image
+					className={styles.image}
+					src="/images/where_to_buy.jpg"
+					alt=""
+					fill
+				/>
+			</div>
 		</section>
 	)
 }
