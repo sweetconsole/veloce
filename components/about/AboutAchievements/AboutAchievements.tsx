@@ -13,8 +13,8 @@ const AboutAchievements: FC = () => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.info}>
+				it
 				<Caption>Recognition</Caption>
-
 				<ul className={styles.achievements}>
 					{achievements.map((achievement, index) => (
 						<li className={styles.achievement} key={index}>
@@ -31,7 +31,7 @@ const AboutAchievements: FC = () => {
 					<Image
 						className={styles.tag}
 						src="/images/tags/founder.svg"
-						alt={""}
+						alt={"Founder"}
 						width={177}
 						height={44}
 					/>

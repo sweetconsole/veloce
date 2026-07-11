@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { type FC } from "react"
 import { ActionButton, Heading } from "@/components/shared"
 import { ROUTES } from "@/utils/routes.config"
@@ -16,6 +17,15 @@ const Intro: FC = () => {
 					Shop now
 				</ActionButton>
 			</div>
+
+			<Image
+				className={styles.image}
+				src="/images/intro_background.jpg"
+				fill
+				priority
+				quality={80}
+				alt=""
+			/>
 		</section>
 	)
 }

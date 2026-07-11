@@ -1,0 +1,11 @@
+@use "../../../../styles/variables";
+@use "../../../../styles/mixins";
+@use "../../../../styles/adaptive";
+
+.placeholder {
+	@include mixins.resize("height", 277, 480, 156);
+}
+
+.placeholder_active {
+	@include mixins.resize("height", 127, 137, 156);
+}

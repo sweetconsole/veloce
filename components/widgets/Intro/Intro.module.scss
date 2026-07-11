@@ -7,10 +7,6 @@
 
 	position: relative;
 	width: 100%;
-	background-image: url("/images/intro_background.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
 }
 
 .block {
@@ -19,6 +15,8 @@
 	@include mixins.resize("padding", 30, 30, 30);
 	@include mixins.resize("gap", 60, 60, 60);
 
+	position: relative;
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -28,4 +26,9 @@
 		width: 100%;
 		height: auto;
 	}
+}
+
+.image {
+	object-fit: cover;
+	object-position: center;
 }
