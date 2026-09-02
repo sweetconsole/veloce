@@ -13,6 +13,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 	return (
 		<html id="html" lang="en">
+			<head>
+				<meta name="color-scheme" content="only light" />
+			</head>
 			<body
 				className={`${geist.variable} ${russo.variable} ${oswald.variable} ${jaro.variable}`}
 			>

@@ -15,7 +15,9 @@ const Menu: FC = () => {
 						href={`${ROUTES.MOCKTAILS}/${mocktail.slug}`}
 						key={index}
 					>
-						<PageTitle className={styles.title}>{mocktail.title}</PageTitle>
+						<PageTitle className={styles.title} lang="es">
+							{mocktail.title}
+						</PageTitle>
 					</Link>
 				))}
 
