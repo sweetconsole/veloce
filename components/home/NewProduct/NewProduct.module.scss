@@ -21,7 +21,6 @@
 .info {
 	@include mixins.resize("gap", 8, 8, 8);
 
-	position: relative;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -41,8 +40,9 @@
 }
 
 .title {
-	@include mixins.resize("font-size", 150, 130, 70);
+	@include mixins.resize("font-size", 150, 130, 60);
 
+	text-align: center;
 	text-transform: uppercase;
 }
 

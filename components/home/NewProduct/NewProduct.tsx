@@ -22,7 +22,11 @@ const NewProduct: FC = () => {
 					alt="Новинка"
 				/>
 
-				<PageTitle className={styles.title}>Primavera</PageTitle>
+				<PageTitle className={styles.title}>
+					Prima
+					<wbr />
+					vera
+				</PageTitle>
 				<Heading className={styles.subtitle} level={3}>
 					Крепкий пряный аперитив с кардамоном, имбирем и корицей.
 				</Heading>

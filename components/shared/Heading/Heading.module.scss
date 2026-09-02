@@ -11,21 +11,21 @@
 
 .heading_1 {
 	@include heading;
-	@include mixins.resize("font-size", 55, 45, 35);
+	@include mixins.resize("font-size", 55, 45, 22);
 
 	line-height: 110%;
 }
 
 .heading_2 {
 	@include heading;
-	@include mixins.resize("font-size", 39, 32, 29);
+	@include mixins.resize("font-size", 39, 32, 25);
 
 	line-height: 110%;
 }
 
 .heading_3 {
 	@include heading;
-	@include mixins.resize("font-size", 30, 24, 22);
+	@include mixins.resize("font-size", 30, 24, 19);
 
 	line-height: 130%;
 }
