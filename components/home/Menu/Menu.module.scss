@@ -41,7 +41,8 @@
 }
 
 .title {
-	@include mixins.resize("font-size", 150, 130, 50);
+	@include mixins.resize("font-size", 150, 130, 40);
 
+	overflow-wrap: break-word;
 	transition: variables.$transition-default;
 }

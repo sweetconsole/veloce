@@ -3,7 +3,7 @@
 @use "../../../../styles/adaptive";
 
 .header {
-	@include mixins.resize("padding-top", 25, 30, 15);
+	@include mixins.resize("padding-top", 25, 30, 0);
 	@include mixins.resize("height", 277, 480, 156);
 
 	position: fixed;
@@ -60,6 +60,8 @@
 }
 
 .container {
+	@include mixins.resize("padding-top", 0, 0, 15);
+
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: flex-end;
