@@ -1,8 +1,9 @@
 
 // Fonts
-$font-jaro: var(--font-jaro), sans-serif;
-$font-geist: var(--font-geist), sans-serif;
-$font-staatliches: var(--font-staatliches), sans-serif;
+$font-primary: var(--font-russo), sans-serif;
+$font-secondary: var(--font-oswald), sans-serif;
+$font-accent: var(--font-geist), sans-serif;
+$font-logo: var(--font-jaro), sans-serif;
 
 // Colors
 $color-white: #ffffff;
@@ -14,7 +15,7 @@ $transition-default: all .2s ease-in-out;
 
 // Adaptive constants
 $not-tablet: 1279px; // 1024
-$not-mobile: 799px; // 672
+$not-mobile: 842px; // 672
 
 // Template constants
 $width-template-laptop: 1280;

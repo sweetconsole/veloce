@@ -25,7 +25,7 @@
 .logo {
 	@include mixins.resize("font-size", 54.02, 54.02, 20);
 
-	font-family: variables.$font-jaro;
+	font-family: variables.$font-logo;
 	line-height: 84%;
 	color: variables.$color-primary;
 	text-transform: uppercase;

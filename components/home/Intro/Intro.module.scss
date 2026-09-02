@@ -10,7 +10,7 @@
 }
 
 .block {
-	@include mixins.resize("width", 541, 450, 0);
+	@include mixins.resize("width", 641, 450, 0);
 	@include mixins.resize("height", 541, 295, 0);
 	@include mixins.resize("padding", 30, 30, 30);
 	@include mixins.resize("gap", 60, 60, 60);

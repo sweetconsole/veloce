@@ -4,8 +4,8 @@
 .label {
 	@include mixins.resize("font-size", 26, 24, 16);
 
-	font-family: variables.$font-jaro;
-	font-weight: 400;
+	font-family: variables.$font-secondary;
+	font-weight: 700;
 	line-height: 139%;
 	color: variables.$color-black;
 	text-transform: uppercase;

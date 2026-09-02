@@ -12,7 +12,7 @@
 }
 
 .info {
-	@include mixins.resize("min-height", 230, 230, 200);
+	@include mixins.resize("min-height", 230, 160, 200);
 	@include mixins.resize("padding", 23, 23, 23);
 
 	max-height: 100vh;

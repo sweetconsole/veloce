@@ -6,11 +6,10 @@ const AboutIntro: FC = () => {
 	return (
 		<section className={styles.section}>
 			<Container className={styles.container}>
-				<Caption>About</Caption>
+				<Caption className={styles.title}>О нас</Caption>
 				<Heading level={1}>
-					Véloce represents a new era of the aperitif, where flavor and
-					functionality converge in a beautifully crafted, alcohol-free
-					beverage.
+					Véloce — это новая эра аперитивов, в которой вкус и функциональность
+					сливаются воедино в прекрасно приготовленном безалкогольном напитке.
 				</Heading>
 			</Container>
 		</section>

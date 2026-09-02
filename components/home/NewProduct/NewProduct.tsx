@@ -17,13 +17,14 @@ const NewProduct: FC = () => {
 				<Image
 					className={styles.tag}
 					src="/images/tags/new.svg"
-					width={115}
+					width={182}
 					height={44}
-					alt="New"
+					alt="Новинка"
 				/>
+
 				<PageTitle className={styles.title}>Primavera</PageTitle>
 				<Heading className={styles.subtitle} level={3}>
-					A bold, spiced aperitif featuring cardamom, ginger, and cinnamon.
+					Крепкий пряный аперитив с кардамоном, имбирем и корицей.
 				</Heading>
 			</div>
 		</section>

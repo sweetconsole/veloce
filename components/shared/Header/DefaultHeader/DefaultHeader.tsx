@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { type FC } from "react"
 import { Container, Label } from "@/components/shared"
@@ -19,13 +18,13 @@ const DefaultHeader: FC = () => {
 
 				<nav className={styles.navigation}>
 					<Link className={styles.link} href={ROUTES.ABOUT}>
-						<Label>About</Label>
+						<Label>О нас</Label>
 					</Link>
 					<Link className={styles.link} href={ROUTES.MOCKTAILS}>
-						<Label>Mocktails</Label>
+						<Label>Моктейли</Label>
 					</Link>
 					<Link className={styles.link} href={ROUTES.CONTACT}>
-						<Label>Contact</Label>
+						<Label>Контакты</Label>
 					</Link>
 				</nav>
 			</Container>

@@ -5,7 +5,7 @@ import {
 	Products,
 	Menu,
 	WhereToBuy
-} from "@/components/widgets"
+} from "@/components/home"
 
 export default function Home() {
 	return (

@@ -10,42 +10,42 @@ type Contact = {
 
 export const contacts: Contact[] = [
 	{
-		region: "USA",
+		region: "Москва",
 		links: [
 			{
 				title: "The Artisanal Grocer"
 			},
 			{
-				title: "usa@veloce.com",
-				href: "mailto:usa@veloce.com"
+				title: "msc@veloce.com",
+				href: "mailto:msc@veloce.com"
 			},
 			{
-				title: "+1 (555) 123-4567",
-				href: "tel:+15551234567"
+				title: "+7 (646) 555-45-67",
+				href: "tel:+76465554567"
 			}
 		]
 	},
 	{
-		region: "Europe",
+		region: "Санкт-Петербург",
 		links: [
 			{
 				title: "Le Marché Bio"
 			},
 			{
-				title: "europe@veloce.com",
-				href: "mailto:europe@veloce.com"
+				title: "spb@veloce.com",
+				href: "mailto:spb@veloce.com"
 			}
 		]
 	},
 	{
-		region: "Asia",
+		region: "Казань",
 		links: [
 			{
 				title: "Kurashi & Co."
 			},
 			{
-				title: "asia@veloce.com",
-				href: "mailto:asia@veloce.com"
+				title: "kzn@veloce.com",
+				href: "mailto:kzn@veloce.com"
 			}
 		]
 	}

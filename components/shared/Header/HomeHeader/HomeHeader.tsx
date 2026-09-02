@@ -8,7 +8,7 @@ import {
 	Heading,
 	Label
 } from "@/components/shared"
-import Placeholder from "@/components/widgets/Header/Placeholder/Placeholder"
+import Placeholder from "@/components/shared/Header/Placeholder/Placeholder"
 import { useScroll } from "@/hooks/useScroll"
 import { ROUTES } from "@/utils/routes.config"
 import styles from "./HomeHeader.module.scss"
@@ -42,18 +42,18 @@ const HomeHeader: FC = () => {
 
 					<div className={styles.block}>
 						<Heading className={styles.subtitle} level={3}>
-							The ZERO-PROOF aperitif for modern living.
+							Безалкогольный аперитив для современного образа жизни.
 						</Heading>
 
 						<nav className={styles.navigation}>
 							<Link className={styles.link} href={ROUTES.ABOUT}>
-								<Label>About</Label>
+								<Label>О Нас</Label>
 							</Link>
 							<Link className={styles.link} href={ROUTES.MOCKTAILS}>
-								<Label>Mocktails</Label>
+								<Label>Моктейли</Label>
 							</Link>
 							<Link className={styles.link} href={ROUTES.CONTACT}>
-								<Label>Contact</Label>
+								<Label>Контакты</Label>
 							</Link>
 						</nav>
 					</div>

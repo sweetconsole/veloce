@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { type ReactNode } from "react"
-import { Footer, Header } from "@/components/widgets"
-import { geist, jaro, staatliches } from "./fonts"
+import { Footer, Header } from "@/components/shared"
+import { geist, oswald, russo, jaro } from "./fonts"
 import "@/styles/reset.scss"
 import "@/styles/general.scss"
 
@@ -14,7 +14,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 	return (
 		<html id="html" lang="en">
 			<body
-				className={`${jaro.variable} ${geist.variable} ${staatliches.variable}`}
+				className={`${geist.variable} ${russo.variable} ${oswald.variable} ${jaro.variable}`}
 			>
 				<Header />
 

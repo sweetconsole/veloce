@@ -19,7 +19,6 @@
 }
 
 .info {
-	@include mixins.resize("max-width", 584, 506, 287);
 	@include mixins.resize("gap", 8, 8, 8);
 
 	position: relative;
@@ -43,9 +42,14 @@
 
 .title {
 	@include mixins.resize("font-size", 150, 130, 70);
+
+	text-transform: uppercase;
 }
 
 .subtitle {
+	@include mixins.resize("max-width", 800, 506, 287);
+
+	margin: 0 auto;
 	color: variables.$color-white;
 	text-align: center;
 }

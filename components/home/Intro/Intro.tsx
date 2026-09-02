@@ -17,12 +17,12 @@ const Intro: FC = () => {
 
 			<div className={styles.block}>
 				<Heading level={2}>
-					The only SPIRIT-FREE aperitif that tastes as good as it makes you
-					feel.
+					Единственный безалкогольный аперитив, который не только хорош на вкус,
+					но и поднимает настроение.
 				</Heading>
 
 				<ActionButton as="link" variant={"dark"} href={ROUTES.CONTACT}>
-					Shop now
+					Купить
 				</ActionButton>
 			</div>
 		</section>

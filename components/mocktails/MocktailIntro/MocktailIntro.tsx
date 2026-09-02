@@ -19,7 +19,7 @@ const MocktailIntro: FC = () => {
 				</Heading>
 
 				<ActionButton className={styles.button} as="link" href={ROUTES.CONTACT}>
-					Shop now
+					Купить
 				</ActionButton>
 			</div>
 

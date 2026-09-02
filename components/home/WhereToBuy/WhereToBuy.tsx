@@ -8,8 +8,8 @@ const WhereToBuy: FC = () => {
 		<section className={styles.section}>
 			<div className={styles.info}>
 				<Heading level={2}>
-					Experience the refined taste of Véloce. Visit our premium stockists
-					for your next alcohol-free aperitif.
+					Почувствуйте изысканный вкус Véloce. Посетите наши рестораны
+					премиум-класса, чтобы приобрести следующий безалкогольный аперитив.
 				</Heading>
 			</div>
 
@@ -19,6 +19,7 @@ const WhereToBuy: FC = () => {
 					src="/images/where_to_buy.jpg"
 					alt=""
 					fill
+					sizes="100%"
 				/>
 			</div>
 		</section>

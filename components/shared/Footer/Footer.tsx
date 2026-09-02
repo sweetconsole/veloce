@@ -18,16 +18,16 @@ const Footer: FC = () => {
 			<Container className={styles.info}>
 				<nav className={styles.info_section}>
 					<Link className={styles.link} href={ROUTES.ABOUT}>
-						<Label>About</Label>
+						<Label>О нас</Label>
 					</Link>
 					<Link className={styles.link} href={ROUTES.CONTACT}>
-						<Label>Contact</Label>
+						<Label>Контакты</Label>
 					</Link>
 				</nav>
 
 				<div className={styles.info_section}>
 					<Link className={styles.link} href="tel:6465554567">
-						<Label>(646) 555-4567</Label>
+						<Label>+7 (646) 555-45-67</Label>
 					</Link>
 					<Link className={styles.link} href="mailto:hello@veloce.com">
 						<Label>hello@veloce.com</Label>
@@ -43,7 +43,7 @@ const Footer: FC = () => {
 					width={575}
 					height={193}
 				/>
-				<p className={styles.copyright}>Veloce© 2025 All Rights Reserved</p>
+				<p className={styles.copyright}>Veloce© 2025 Все права защищены</p>
 			</Container>
 
 			<ChessboardPattern />

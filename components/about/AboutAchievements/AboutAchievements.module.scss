@@ -62,7 +62,7 @@
 	@include mixins.resize("bottom", 16, 16, 16);
 	@include mixins.resize("padding", 16, 16, 16);
 	@include mixins.resize("border-radius", 16, 16, 16);
-	@include mixins.resize("gap", 14, 14, 14);
+	@include mixins.resize("gap", 24, 24, 24);
 
 	position: sticky;
 	display: flex;

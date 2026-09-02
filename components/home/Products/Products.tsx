@@ -31,9 +31,7 @@ const Products: FC = () => {
 							className={styles.link}
 							href={`${ROUTES.MOCKTAILS}/${mocktail.slug}`}
 						>
-							<Paragraph className={styles.description}>
-								Find near you
-							</Paragraph>
+							<Paragraph className={styles.description}>Показать</Paragraph>
 						</Link>
 					</li>
 				))}

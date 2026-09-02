@@ -2,9 +2,9 @@
 @use "../../../styles/mixins";
 
 .title {
-	@include mixins.resize("font-size", 150, 130, 80);
+	@include mixins.resize("font-size", 137, 120, 80);
 
-	font-family: variables.$font-staatliches;
+	font-family: variables.$font-primary;
 	font-weight: 400;
 	line-height: 80%;
 	color: variables.$color-white;

@@ -13,7 +13,6 @@ const AboutAchievements: FC = () => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.info}>
-				it
 				<Caption>Recognition</Caption>
 				<ul className={styles.achievements}>
 					{achievements.map((achievement, index) => (
@@ -30,7 +29,9 @@ const AboutAchievements: FC = () => {
 					className={styles.founder_image}
 					src="/images/founder.jpg"
 					alt=""
+					priority
 					fill
+					sizes="100%"
 				/>
 
 				<div className={styles.founder_empty} />
@@ -42,7 +43,7 @@ const AboutAchievements: FC = () => {
 						width={177}
 						height={44}
 					/>
-					<PageTitle>Mike Vera</PageTitle>
+					<PageTitle>Майк Вера</PageTitle>
 					<ChessboardPattern color={"white"} />
 				</div>
 			</div>

@@ -7,6 +7,8 @@
 	@include mixins.resize("padding-bottom", 120, 120, 120);
 	@include mixins.resize("padding-left", 200, 40, 20);
 	@include mixins.resize("padding-right", 200, 40, 20);
+
+	position: relative;
 }
 
 .image {

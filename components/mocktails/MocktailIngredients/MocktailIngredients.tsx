@@ -12,7 +12,7 @@ const MocktailIngredients: FC = () => {
 		<section className={styles.section}>
 			<Container className={styles.container}>
 				<Heading className={styles.title} level={1}>
-					Ingredients
+					Ингредиенты
 				</Heading>
 
 				<ul className={styles.ingredients}>
@@ -35,7 +35,7 @@ const MocktailIngredients: FC = () => {
 				<div className={styles.line} />
 
 				<Heading className={styles.title} level={1}>
-					Perfect Serve:
+					Идеальная подача:
 				</Heading>
 				<Heading className={styles.serve} level={3}>
 					{mocktail.serveDescription}

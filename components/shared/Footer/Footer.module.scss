@@ -67,7 +67,7 @@
 .copyright {
 	@include mixins.resize("font-size", 14.22, 14.22, 14.22);
 
-	font-family: variables.$font-geist;
+	font-family: variables.$font-accent;
 	font-weight: 700;
 	line-height: 110%;
 	color: variables.$color-primary;

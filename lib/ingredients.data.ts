@@ -5,47 +5,47 @@ export type Ingredient = {
 
 export const ingredients: { [key: string]: Ingredient } = {
 	agave: {
-		title: "Agave",
+		title: "Агава",
 		image: "/images/ingredients/agave.png"
 	},
 	cardamom: {
-		title: "Cardamom",
+		title: "Кардамон",
 		image: "/images/ingredients/cardamom.png"
 	},
 	chamomile: {
-		title: "Chamomile",
+		title: "Ромашка",
 		image: "/images/ingredients/chamomile.png"
 	},
 	cinnamon: {
-		title: "Cinnamon",
+		title: "Корица",
 		image: "/images/ingredients/cinnamon.png"
 	},
 	elderberry: {
-		title: "Elderberry",
+		title: "Бузина",
 		image: "/images/ingredients/elderberry.png"
 	},
 	ginger: {
-		title: "Ginger",
+		title: "Имбирь",
 		image: "/images/ingredients/ginger.png"
 	},
 	grapefruit: {
-		title: "Grapefruit",
+		title: "Грейпфрут",
 		image: "/images/ingredients/grapefruit.png"
 	},
 	lavender: {
-		title: "Lavender",
+		title: "Лаванда",
 		image: "/images/ingredients/lavender.png"
 	},
 	lemon: {
-		title: "Lemon",
+		title: "Лимон",
 		image: "/images/ingredients/lemon.png"
 	},
 	lime: {
-		title: "Lime",
+		title: "Лайм",
 		image: "/images/ingredients/lime.png"
 	},
 	mint: {
-		title: "Mint",
+		title: "Мята",
 		image: "/images/ingredients/mint.png"
 	}
 }

@@ -6,17 +6,17 @@ type Contact = {
 
 export const contacts: Array<Contact> = [
 	{
-		type: "Phone",
-		value: "415-555-4567",
-		link: "tel:4155554567"
+		type: "Телефон",
+		value: "+7 (415) 555-45-67",
+		link: "tel:+74155554567"
 	},
 	{
-		type: "Email",
+		type: "Почта",
 		value: "hello@veloce.com",
 		link: "mailto:hello@veloce.com"
 	},
 	{
-		type: "Social",
+		type: "Соц. сети",
 		value: "@veloce",
 		link: "https://kwork.ru/user/sweetconsole"
 	}

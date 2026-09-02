@@ -14,12 +14,11 @@ export const mocktails: Array<Mocktail> = [
 	{
 		slug: "lavande",
 		title: "Lavande",
-		shortDescription:
-			"A delicate and floral aperitif with notes of lavender and chamomile.",
+		shortDescription: "Нежный цветочный с нотами лаванды и ромашки.",
 		longDescription:
-			"A delicate and floral aperitif with lavender and chamomile aromas, softened by notes of elderberry and lemon for an exquisite aftertaste.",
+			"Нежный цветочный с ароматами лаванды и ромашки, смягченными нотами бузины и лимона для изысканного послевкусия.",
 		serveDescription:
-			"A delicate floral aperitif. Served in a chilled martini glass. Garnished with a sprig of fresh lavender and a pinch of dried chamomile flowers. Lemon zest is optional for flavor.",
+			"Нежный цветочный аперитив. Подается в охлажденном бокале для мартини. Украшен веточкой свежей лаванды и щепоткой сушеных цветков ромашки. По желанию можно добавить цедру лимона для аромата.",
 		image: "/images/mocktails/lavande.jpg",
 		ingredients: [
 			ingredients.lavender,
@@ -31,12 +30,11 @@ export const mocktails: Array<Mocktail> = [
 	{
 		slug: "primavera",
 		title: "Primavera",
-		shortDescription:
-			"A refreshing and vibrant aperitif with bright citrus notes.",
+		shortDescription: "Освежающий и яркий с яркими цитрусовыми нотками.",
 		longDescription:
-			"A bright and refreshing aperitif with a citrus accent, where grapefruit, lemon, and mint are harmoniously combined with the mild sweetness of agave.",
+			"Яркий и освежающий с цитрусовым акцентом, в котором грейпфрут, лимон и мята гармонично сочетаются с мягкой сладостью агавы.",
 		serveDescription:
-			"A bright citrus aperitif. Served in a tall double rocks glass on a large ice cube. Garnished with a thin slice of grapefruit, a lemon slice, and a fresh mint sprig.",
+			"Яркий цитрусовый аперитив. Подается в высоком двойном рокс-стакане на большом кубике льда. Украшен тонким ломтиком грейпфрута, долькой лимона и веточкой свежей мяты.",
 		image: "/images/mocktails/primavera.jpg",
 		ingredients: [
 			ingredients.grapefruit,
@@ -48,12 +46,11 @@ export const mocktails: Array<Mocktail> = [
 	{
 		slug: "spezia",
 		title: "Spezia",
-		shortDescription:
-			"A bold, spiced aperitif featuring cardamom, ginger, and cinnamon.",
+		shortDescription: "Смелый пряный с кардамоном, имбирем и корицей.",
 		longDescription:
-			"A bold and spicy aperitif with a rich flavor of cardamom, ginger, and cinnamon, complemented by the tartness of lime and the sweetness of honey or anise.",
+			"Смелый и пряный с насыщенным вкусом кардамона, имбиря и корицы, дополненный кислинкой лайма и сладостью меда или аниса.",
 		serveDescription:
-			"A spicy, rich aperitif. Served in a coupe glass. It is decorated with a cinnamon stick, a thin strip of lime zest, and an star of star anise.",
+			"Пряный, насыщенный аперитив. Подается в бокале купе. Украшен палочкой корицы, тонкой полоской цедры лайма и звездочкой бадьяна.",
 		image: "/images/mocktails/spezia.jpg",
 		ingredients: [
 			ingredients.cardamom,

@@ -4,7 +4,7 @@
 .caption_1 {
 	@include mixins.resize("font-size", 15, 14, 13);
 
-	font-family: variables.$font-geist;
+	font-family: variables.$font-accent;
 	font-weight: 700;
 	line-height: 110%;
 	color: variables.$color-black;
@@ -12,7 +12,7 @@
 }
 
 .caption_2 {
-	font-family: variables.$font-staatliches;
+	font-family: variables.$font-primary;
 	font-weight: 400;
 	line-height: 139%;
 	color: variables.$color-black;
@@ -20,7 +20,7 @@
 }
 
 .caption_3 {
-	font-family: variables.$font-staatliches;
+	font-family: variables.$font-primary;
 	font-weight: 400;
 	line-height: 139%;
 	color: variables.$color-black;
@@ -28,7 +28,7 @@
 }
 
 .caption_4 {
-	font-family: variables.$font-geist;
+	font-family: variables.$font-accent;
 	font-weight: 500;
 	line-height: 110%;
 	color: variables.$color-black;

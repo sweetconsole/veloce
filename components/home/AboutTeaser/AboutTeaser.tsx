@@ -7,12 +7,12 @@ const AboutTeaser: FC = () => {
 	return (
 		<Container className={styles.block} tag={"section"}>
 			<Heading level={1}>
-				Véloce is the ZERO-PROOF aperitif for modern living, crafted with super
-				herbs and nutraceuticals to elevate your well-being, without
-				compromising the sophisticated ritual of the aperitif.
+				Véloce — это безалкогольные напитки для современного образа жизни. Они
+				созданы, чтобы улучшать ваше самочувствие, не отказываясь от ритуала
+				аперитива.
 			</Heading>
 			<ActionButton as="link" href={ROUTES.ABOUT}>
-				About Us
+				О Нас
 			</ActionButton>
 		</Container>
 	)

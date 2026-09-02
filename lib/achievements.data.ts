@@ -4,11 +4,11 @@ type Achievement = {
 }
 
 export const achievements: Array<Achievement> = [
-	{ year: 2026, title: "Best botanical blend" },
-	{ year: 2025, title: "Gold medal – bittersweet category" },
-	{ year: 2024, title: "Best sustainable packaging" },
-	{ year: 2024, title: "Eco-friendly brand of the year" },
-	{ year: 2023, title: "Editor's choice – best aperitif" },
-	{ year: 2023, title: "Most elegant bottle design" },
-	{ year: 2022, title: "Best low & no alcohol beverage" }
+	{ year: 2026, title: "Лучший натуральный коктейль" },
+	{ year: 2025, title: "Золотая медаль сладких напитков" },
+	{ year: 2024, title: "Лучшая экологичная упаковка" },
+	{ year: 2024, title: "Экологичный бренд года" },
+	{ year: 2023, title: "Выбор редакции — лучший аперитив" },
+	{ year: 2023, title: "Самый элегантный дизайн бутылки" },
+	{ year: 2022, title: "Лучший слабоалкогольный напиток" }
 ]

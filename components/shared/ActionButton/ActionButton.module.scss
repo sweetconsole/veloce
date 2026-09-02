@@ -7,6 +7,7 @@
 	@include mixins.resize("padding-right", 26, 26, 26);
 	@include mixins.resize("padding-top", 8, 8, 8);
 	@include mixins.resize("padding-bottom", 8, 8, 8);
+	@include mixins.resize("min-width", 160, 140, 120);
 
 	cursor: pointer;
 	border: 2px solid variables.$color-primary;
@@ -14,10 +15,9 @@
 	transition: variables.$transition-default;
 
 	p {
+		text-align: center;
 		transition: variables.$transition-default;
 	}
-
-
 }
 
 .button_light {

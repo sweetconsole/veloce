@@ -13,7 +13,8 @@ const AboutContact: FC = () => {
 					className={styles.image}
 					src="/images/brew_kettle.jpg"
 					fill
-					alt={""}
+					alt=""
+					sizes="100%"
 				/>
 			</div>
 

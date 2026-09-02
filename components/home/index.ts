@@ -1,6 +1,4 @@
 export { default as AboutTeaser } from "./AboutTeaser/AboutTeaser"
-export { default as Footer } from "./Footer/Footer"
-export { default as Header } from "./Header/Header"
 export { default as Intro } from "./Intro/Intro"
 export { default as Menu } from "./Menu/Menu"
 export { default as NewProduct } from "./NewProduct/NewProduct"
