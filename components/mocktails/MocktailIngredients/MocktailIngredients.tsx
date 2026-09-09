@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { type FC } from "react"
 import { Container, Heading } from "@/components/shared"
-import { useMocktail } from "@/hooks/useMocktail"
+import { useMocktail } from "@/hooks/useMocktail/useMocktail"
 import styles from "./MocktailIngredients.module.scss"
 
 const MocktailIngredients: FC = () => {

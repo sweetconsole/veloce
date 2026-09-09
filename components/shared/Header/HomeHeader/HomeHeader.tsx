@@ -9,7 +9,7 @@ import {
 	Label
 } from "@/components/shared"
 import Placeholder from "@/components/shared/Header/Placeholder/Placeholder"
-import { useScroll } from "@/hooks/useScroll"
+import { useScroll } from "@/hooks/useScroll/useScroll"
 import { ROUTES } from "@/utils/routes.config"
 import styles from "./HomeHeader.module.scss"
 

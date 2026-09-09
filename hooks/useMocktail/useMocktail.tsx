@@ -24,8 +24,12 @@ export function MocktailProvider({
 	mocktail
 }: MocktailProviderProps) {
 	return (
-		<MocktailContext.Provider value={mocktail}>
-			{children}
-		</MocktailContext.Provider>
+		<>
+			{mocktail ? (
+				<MocktailContext.Provider value={mocktail}>
+					{children}
+				</MocktailContext.Provider>
+			) : null}
+		</>
 	)
 }

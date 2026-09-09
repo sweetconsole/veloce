@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { type FC } from "react"
 import { ActionButton, Heading, PageTitle } from "@/components/shared"
-import { useMocktail } from "@/hooks/useMocktail"
+import { useMocktail } from "@/hooks/useMocktail/useMocktail"
 import { ROUTES } from "@/utils/routes.config"
 import styles from "./MocktailIntro.module.scss"
 
