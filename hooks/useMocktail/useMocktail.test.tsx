@@ -1,5 +1,5 @@
-import { act, renderHook } from "@testing-library/react"
-import { mocktails } from "@/lib/mocktails.data"
+import { renderHook } from "@testing-library/react"
+import { mocktails } from "@/lib/mocktails/mocktails.data"
 import { useMocktail, MocktailProvider } from "./useMocktail"
 
 describe("useMocktail", () => {

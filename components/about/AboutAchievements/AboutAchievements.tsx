@@ -6,7 +6,7 @@ import {
 	Heading,
 	PageTitle
 } from "@/components/shared"
-import { achievements } from "@/lib/achievements.data"
+import { achievements } from "@/lib/achievements/achievements.data"
 import styles from "./AboutAchievements.module.scss"
 
 const AboutAchievements: FC = () => {

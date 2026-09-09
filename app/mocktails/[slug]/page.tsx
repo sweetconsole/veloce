@@ -2,7 +2,10 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { MocktailIngredients, MocktailIntro } from "@/components/mocktails"
 import { MocktailProvider } from "@/hooks/useMocktail/useMocktail"
-import { getAllMocktailSlugs, getMocktailBySlug } from "@/lib/mocktails.data"
+import {
+	getAllMocktailSlugs,
+	getMocktailBySlug
+} from "@/lib/mocktails/mocktails.data"
 
 export async function generateStaticParams() {
 	return getAllMocktailSlugs()

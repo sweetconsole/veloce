@@ -1,6 +1,6 @@
 "use client"
 import { useContext, createContext, ReactNode } from "react"
-import { Mocktail } from "@/lib/mocktails.data"
+import { Mocktail } from "@/lib/mocktails/mocktails.data"
 
 const MocktailContext = createContext<Mocktail | null>(null)
 

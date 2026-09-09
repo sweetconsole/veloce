@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { type FC } from "react"
 import { Container, Heading, Paragraph } from "@/components/shared"
-import { mocktails } from "@/lib/mocktails.data"
+import { mocktails } from "@/lib/mocktails/mocktails.data"
 import { ROUTES } from "@/utils/routes.config"
 import styles from "./Products.module.scss"
 

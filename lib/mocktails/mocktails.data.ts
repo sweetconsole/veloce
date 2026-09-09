@@ -1,4 +1,4 @@
-import { Ingredient, ingredients } from "./ingredients.data"
+import { Ingredient, ingredients } from "../ingredients/ingredients.data"
 
 export type Mocktail = {
 	slug: string
@@ -62,7 +62,7 @@ export const mocktails: Array<Mocktail> = [
 ]
 
 export function getMocktailBySlug(slug: string) {
-	return mocktails.find(mocktail => mocktail.slug === slug)
+	return mocktails.find(mocktail => mocktail.slug === slug.toLowerCase())
 }
 
 export function getAllMocktailSlugs(): { slug: string }[] {

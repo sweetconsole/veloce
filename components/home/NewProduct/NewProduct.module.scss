@@ -50,6 +50,6 @@
 	@include mixins.resize("max-width", 800, 506, 287);
 
 	margin: 0 auto;
-	color: variables.$color-white;
+	color: variables.$color-white !important;
 	text-align: center;
 }

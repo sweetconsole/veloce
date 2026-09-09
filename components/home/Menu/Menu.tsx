@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { type FC } from "react"
 import { Container, PageTitle } from "@/components/shared"
-import { mocktails } from "@/lib/mocktails.data"
+import { mocktails } from "@/lib/mocktails/mocktails.data"
 import { ROUTES } from "@/utils/routes.config"
 import styles from "./Menu.module.scss"
 

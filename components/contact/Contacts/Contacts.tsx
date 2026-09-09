@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import { Caption } from "@/components/shared"
-import { contacts } from "../../../lib/contacts.data"
+import { contacts } from "../../../lib/contacts/contacts.data"
 import styles from "./Contacts.module.scss"
 
 const Contacts: FC = () => {
