@@ -1,11 +1,14 @@
-type Link = {
+type ContactLinkType = "email" | "phone" | "address" | "url"
+
+export type ContactLink = {
+	type: ContactLinkType
 	title: string
-	href?: string
+	value: string
 }
 
 type Contact = {
 	region: string
-	links: Link[]
+	links: ContactLink[]
 }
 
 export const contacts: Contact[] = [
@@ -13,15 +16,19 @@ export const contacts: Contact[] = [
 		region: "Москва",
 		links: [
 			{
-				title: "The Artisanal Grocer"
+				type: "address",
+				title: "The Artisanal Grocer",
+				value: "ул. Тверская, 15, Москва"
 			},
 			{
+				type: "email",
 				title: "msc@veloce.com",
-				href: "mailto:msc@veloce.com"
+				value: "msc@veloce.com"
 			},
 			{
+				type: "phone",
 				title: "+7 (646) 555-45-67",
-				href: "tel:+76465554567"
+				value: "+76465554567"
 			}
 		]
 	},
@@ -29,11 +36,14 @@ export const contacts: Contact[] = [
 		region: "Санкт-Петербург",
 		links: [
 			{
-				title: "Le Marché Bio"
+				type: "address",
+				title: "Le Marché Bio",
+				value: "Невский пр., 45, Санкт-Петербург"
 			},
 			{
+				type: "email",
 				title: "spb@veloce.com",
-				href: "mailto:spb@veloce.com"
+				value: "spb@veloce.com"
 			}
 		]
 	},
@@ -41,12 +51,28 @@ export const contacts: Contact[] = [
 		region: "Казань",
 		links: [
 			{
-				title: "Kurashi & Co."
+				type: "address",
+				title: "Kurashi & Co.",
+				value: "ул. Баумана, 12, Казань"
 			},
 			{
+				type: "email",
 				title: "kzn@veloce.com",
-				href: "mailto:kzn@veloce.com"
+				value: "kzn@veloce.com"
 			}
 		]
 	}
 ]
+
+export function getContactLinkHref(link: ContactLink): string | undefined {
+	switch (link.type) {
+		case "email":
+			return `mailto:${link.value}`
+		case "phone":
+			return `tel:${link.value}`
+		case "address":
+			return undefined
+		case "url":
+			return link.value
+	}
+}
