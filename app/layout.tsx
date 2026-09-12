@@ -4,6 +4,7 @@ import { Footer, Header } from "@/components/shared"
 import { geist, oswald, russo, jaro } from "./fonts"
 import "@/styles/reset.scss"
 import "@/styles/general.scss"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
 	title: "Veloce",
@@ -24,6 +25,8 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
 				{children}
 
 				<Footer />
+
+				<SpeedInsights />
 			</body>
 		</html>
 	)
