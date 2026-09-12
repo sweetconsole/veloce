@@ -22,6 +22,10 @@ Véloce — это современный лендинг, рассказываю
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg" width="30" height="30" alt="Puppeteer"/>
 </div>
 
+## 🏠 Главная страница
+
+<img src="./.github/screenshot.png" alt="" />
+
 ## 🚀 Быстрый старт
 
 ### Установка
