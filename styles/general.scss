@@ -1,12 +1,25 @@
 @use "variables";
 @use "mixins";
 
-html {
-	overflow-x: hidden;
+:root {
+	color-scheme: only light;
 }
 
-body {
-	font-family: "Times New Roman", serif;
-	font-size: 24px;
-	color: red;
+*::selection {
+	color: variables.$color-white;
+	background-color: variables.$color-accent-dark;
+}
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+	background: variables.$color-accent-dark;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: variables.$color-accent;
+	border: 3px solid variables.$color-accent-dark;
+	border-radius: 20px;
 }
