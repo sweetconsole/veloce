@@ -10,7 +10,6 @@
 	@include mixins.resize("min-width", 160, 140, 120);
 
 	cursor: pointer;
-	border: 2px solid variables.$color-primary;
 	border-radius: 100%;
 	transition: variables.$transition-default;
 
@@ -24,6 +23,7 @@
 	@include button;
 
 	background-color: transparent;
+	border: 2px solid variables.$color-primary;
 
 	p {
 		color: variables.$color-primary;
@@ -50,6 +50,7 @@
 	@include button;
 
 	background-color: variables.$color-primary;
+	border: 2px solid variables.$color-primary;
 
 	p {
 		color: variables.$color-accent;
@@ -60,6 +61,33 @@
 
 		p {
 			color: variables.$color-primary;
+		}
+	}
+
+	&:active {
+		background-color: variables.$color-white;
+
+		p {
+			color: variables.$color-primary;
+		}
+	}
+}
+
+.button_white {
+	@include button;
+
+	background-color: variables.$color-white;
+	border: 2px solid variables.$color-white;
+
+	p {
+		color: variables.$color-black;
+	}
+
+	&:hover {
+		background-color: transparent;
+
+		p {
+			color: variables.$color-white;
 		}
 	}
 

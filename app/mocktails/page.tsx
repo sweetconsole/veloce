@@ -1,7 +1,12 @@
+import { Products } from "@/components/home"
+import { MocktailsIntro, MocktailsFindUs } from "@/components/mocktails"
+
 export default function ContactPage() {
 	return (
-		<div>
-			<h1>Напитки крч</h1>
-		</div>
+		<main>
+			<MocktailsIntro />
+			<Products />
+			<MocktailsFindUs />
+		</main>
 	)
 }

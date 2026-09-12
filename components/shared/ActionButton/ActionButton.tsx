@@ -6,7 +6,7 @@ import styles from "./ActionButton.module.scss"
 
 type ButtonProps = {
 	as?: "button" | "link"
-	variant?: "light" | "dark"
+	variant?: "light" | "dark" | "white"
 	className?: string
 	href?: string
 	onClick?: () => void
@@ -15,7 +15,8 @@ type ButtonProps = {
 
 const variants = {
 	light: styles.button_light,
-	dark: styles.button_dark
+	dark: styles.button_dark,
+	white: styles.button_white
 }
 
 const ActionButton: FC<ButtonProps> = ({
