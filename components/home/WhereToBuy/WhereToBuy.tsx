@@ -7,7 +7,7 @@ const WhereToBuy: FC = () => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.info}>
-				<Heading level={2}>
+				<Heading className={styles.title} level={2}>
 					Почувствуйте изысканный вкус Véloce. Посетите наши рестораны
 					премиум-класса, чтобы приобрести следующий безалкогольный аперитив.
 				</Heading>

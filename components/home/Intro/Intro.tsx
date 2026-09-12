@@ -16,7 +16,7 @@ const Intro: FC = () => {
 			/>
 
 			<div className={styles.block}>
-				<Heading level={2}>
+				<Heading className={styles.title} level={2}>
 					Единственный безалкогольный аперитив, который не только хорош на вкус,
 					но и поднимает настроение.
 				</Heading>

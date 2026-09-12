@@ -40,6 +40,10 @@
 	border-bottom: 1px solid variables.$color-black;
 }
 
+.achievement_title {
+	color: variables.$color-black;
+}
+
 .founder {
 	@include mixins.resize("padding", 16, 16, 16);
 

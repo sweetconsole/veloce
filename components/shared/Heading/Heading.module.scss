@@ -4,7 +4,6 @@
 @mixin heading {
 	font-family: variables.$font-primary;
 	font-weight: 500;
-	color: variables.$color-black;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
 }

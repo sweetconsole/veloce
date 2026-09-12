@@ -18,7 +18,9 @@ const AboutAchievements: FC = () => {
 					{achievements.map((achievement, index) => (
 						<li className={styles.achievement} key={index}>
 							<Caption>{achievement.year}</Caption>
-							<Heading level={3}>{achievement.title}</Heading>
+							<Heading className={styles.achievement_title} level={3}>
+								{achievement.title}
+							</Heading>
 						</li>
 					))}
 				</ul>

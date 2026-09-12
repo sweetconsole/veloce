@@ -28,6 +28,10 @@
 	}
 }
 
+.title {
+	color: variables.$color-black;
+}
+
 .image {
 	object-fit: cover;
 	object-position: center;
