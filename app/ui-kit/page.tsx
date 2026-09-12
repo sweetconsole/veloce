@@ -4,7 +4,9 @@ import {
 	Heading,
 	Paragraph,
 	Label,
-	Caption
+	Caption,
+	ActionButton,
+	ChessboardPattern
 } from "@/components/shared"
 import styles from "./ui-kit.module.scss"
 
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
 const UIKitPage = () => {
 	return (
 		<div className={styles.wrapper}>
-			<PageTitle title="Page Title" className={styles.text} />
+			<PageTitle className={styles.text}>Page Title</PageTitle>
 
 			<Heading level={1} className={styles.text}>
 				Heading 1
@@ -41,6 +43,10 @@ const UIKitPage = () => {
 			<Caption variant={2}>Caption 2</Caption>
 			<Caption variant={3}>Caption 3</Caption>
 			<Caption variant={4}>Caption 4</Caption>
+
+			<ActionButton>Button</ActionButton>
+
+			<ChessboardPattern />
 		</div>
 	)
 }
