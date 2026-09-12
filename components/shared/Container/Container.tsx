@@ -15,18 +15,12 @@ const Container: FC<ContainerProps> = ({
 	className,
 	...props
 }) => {
-	if (tag === "section") {
-		return (
-			<section className={clsx(styles.container, className)} {...props}>
-				{props.children}
-			</section>
-		)
-	}
+	const Tag = tag === "section" ? "section" : "div"
 
 	return (
-		<div className={clsx(styles.container, className)} {...props}>
+		<Tag className={clsx(styles.container, className)} {...props}>
 			{props.children}
-		</div>
+		</Tag>
 	)
 }
 

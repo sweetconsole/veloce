@@ -41,7 +41,7 @@ const ActionButton: FC<ButtonProps> = ({
 	}
 
 	return (
-		<button className={clsx(variants[variant], className)}>
+		<button className={clsx(variants[variant], className)} onClick={onClick}>
 			<Label>{props.children}</Label>
 		</button>
 	)

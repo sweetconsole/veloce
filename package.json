@@ -11,6 +11,7 @@
 		"test:watch": "jest --watch"
 	},
 	"dependencies": {
+		"@testing-library/user-event": "^14.6.7",
 		"next": "16.2.3",
 		"react": "19.2.4",
 		"react-dom": "19.2.4"
