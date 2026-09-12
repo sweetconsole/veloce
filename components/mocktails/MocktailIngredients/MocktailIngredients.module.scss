@@ -11,6 +11,8 @@
 
 .title {
 	@include mixins.resize("margin-bottom", 24, 32, 32);
+
+	color: variables.$color-black;
 }
 
 .ingredients {
@@ -38,6 +40,7 @@
 
 .ingredient_title {
 	font-weight: 500;
+	color: variables.$color-black;
 	text-align: center;
 }
 
@@ -57,6 +60,7 @@
 .serve {
 	max-width: 70vw;
 	font-weight: 500;
+	color: variables.$color-black;
 
 	@include adaptive.tablet {
 		max-width: 85vw;
